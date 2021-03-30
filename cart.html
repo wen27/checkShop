@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的購物車</title>
+    <!-- favor icon -->
+    <link rel="shortcut icon" href="favicon.ico.">
+    <!-- //custom-theme -->
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <!-- font-awesome-icons -->
+    <script src="https://use.fontawesome.com/d58feda187.js"></script>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav>
+        <label for="toggle">&#9776;</label>
+        <input type="checkbox" id="toggle" />
+        <a href="#" id="logo"><img src="images/logo.png"></a>
+        <ul class="menu_list">
+            <li class="m_nav_item">
+                <a href="index.html">
+                    <b>品牌故事</b><br>
+                    <span>Brand</span>
+                </a>
+            </li>
+            <li class="m_nav_item">
+                <a href="products.html">
+                    <b>商品介紹</b><br>
+                    <span>Products</span>
+                </a>
+            </li>
+            <!-- navcart -->
+            <li class="m_nav_item" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                <a href="#">
+                    <span>
+                        <i class="fa fa-shopping-cart"></i>
+                    </span>
+                    <span id="cartTotal">0</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <h2 class="productsList_title">我的購物車</h2>
+    <div class="products_container">
+        <div class="product_header container">
+            <div class="col-md-3">
+                <h5 class="product-title">商品</h5>
+            </div>
+            <div class="col-md-3">
+                <h5 class="price">價錢</h5>
+            </div>
+            <div class="col-md-3">
+                <h5 class="quantity">數量</h5>
+            </div>
+            <div class="col-md-3">
+                <h5 class="total">金額</h5>
+            </div>
+        </div>
+        <div class="products"></div>
+    </div>
+    <div class="container send_order">
+        <button class="btn btn-success">送出訂單</button>
+        <a href="products.html" class="btn btn-primary">再逛逛</a>
+    </div>
+    
+    <script src="products.js"></script>
+</body>
+
+</html>

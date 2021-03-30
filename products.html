@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品列表</title>
+    <!-- favor icon -->
+    <link rel="shortcut icon" href="favicon.ico.">
+    <!-- //custom-theme -->
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/products.css" rel="stylesheet" type="text/css" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <!-- font-awesome-icons -->
+    <script src="https://use.fontawesome.com/d58feda187.js"></script>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav id="navList">
+        <label id="navOpen">&#9776;</label>
+        <label id="navClose">&#x2612;</label>
+        <!-- <input type="checkbox" id="toggle" /> -->
+        <!-- <a href="#" id="logo"><img src="images/logo.png"></a> -->
+        <ul class="menu_list">
+            <li class="m_nav_item">
+                <img src="images/logo.png" class="logo">
+            </li>
+            <li class="m_nav_item">
+                <a href="index.html">
+                    <b>品牌故事</b><br>
+                    <span>Brand</span>
+                </a>
+            </li>
+            <li class="m_nav_item">
+                <a href="products.html">
+                    <b>商品介紹</b><br>
+                    <span>Products</span>
+                </a>
+            </li>
+            <!-- navcart -->
+            <li class="m_nav_item cartNav" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">            
+                <a href="#">
+                  <b>購物車</b><br>
+                  <span>Cart</span>
+                <span>
+                    <i class="fa fa-shopping-cart cart__icon"></i>
+                <span id="cartTotal" class="item__total">0</span></span>
+            </a>
+            </li>
+        </ul>
+    </nav>
+    <!-- productsList -->
+    <h2 class="productsList_title">商品列表</h2>
+    <div class="container productsList">
+    </div>
+<!-- cart model -->
+    <section class="cart__overlay">
+        <div class="cart">
+          <span class="close__cart">
+            <svg>
+              <use xlink:href="./images/sprite.svg#icon-cross"></use>
+            </svg>
+          </span>
+          <h1>我的購物車</h1>
+          <div class="cart__centent">
+            <!-- Cart Item -->
+            <!-- <div class="cart__item">
+              <img src="./images/product-1.jpg" alt="">
+              <div>
+                <h3>The Original Super Donut</h3>
+                <h3 class="price">$750</h3>
+              </div>
+              <div>
+                <span>
+                  <svg>
+                    <use xlink:href="./images/sprite.svg#icon-angle-up"></use>
+                  </svg>
+                </span>
+                <p>3</p>
+                <span>
+                  <svg>
+                    <use xlink:href="./images/sprite.svg#icon-angle-down"></use>
+                  </svg>
+                </span>
+              </div>
+    
+              <div>
+                <span class="remove__item">
+                  <svg>
+                    <use xlink:href="./images/sprite.svg#icon-trash"></use>
+                  </svg>
+                </span>
+              </div>
+            </div> -->
+          </div>
+          <div class="cart__footer">
+            <h3>總金額: NT <span class="cart__total">0</span></h3>
+            <button class="clear__cart btn">清除</button>
+            <button class="success__cart btn">結帳去</button>
+          </div>
+        </div>
+    </section>
+
+<!-- succOrder model -->
+<section class="succAlert__overlay">
+    <div class="succAlert">
+        <span class="mess"></span>
+    </div>
+</section>
+<script src="products.js"></script>
+</body>
+
+</html>
