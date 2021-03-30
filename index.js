@@ -19,7 +19,7 @@ class UI {
       <div class="w3_service_bottom_grid_pos">
           <a href="# ">
               <p>${type}</p>
-              <img src="/images/logoWhite.png ">
+              <img src="images/logoWhite.png">
           </a>
       </div>
   </ul>
